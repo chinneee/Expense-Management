@@ -5,7 +5,7 @@ from google.oauth2.service_account import Credentials
 from datetime import date, datetime, timedelta
 import json
 import io
-from zoneinfo import ZoneInfo
+
 
 # ── CONFIG ──────────────────────────────────────────────────────────────────
 DAILY_BENCHMARK = 200_000          # VNĐ
@@ -99,7 +99,7 @@ def append_row(sheet, date_val, category, amount, note):
         category,
         int(amount),
         note,
-        datetime.now(ZoneInfo("Asia/Ho_Chi_Minh")).strftime("%Y-%m-%d %H:%M:%S"),
+        datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
     ])
 
 
