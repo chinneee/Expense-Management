@@ -8,7 +8,7 @@ import io
 
 
 # ── CONFIG ──────────────────────────────────────────────────────────────────
-DAILY_BENCHMARK = 200_000          # VNĐ
+DAILY_BENCHMARK = 100_000          # VNĐ
 CATEGORIES = ["Ăn uống", "Di chuyển / Xăng xe", "Mua sắm", "Khác"]
 SHEET_NAME  = "ChiTieuCaNhan"      # Tên Google Sheet của bạn
 WORKSHEET   = "Data"               # Tên tab trong sheet
